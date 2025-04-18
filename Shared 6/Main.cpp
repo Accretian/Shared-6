@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <string>
 
 int main() {
 	int n, m;
@@ -9,8 +8,11 @@ int main() {
 	std::vector<int> vin;
 	std::vector<int> vout(n);
 
-	while (std::cin >> m)
+	while (n != 0) {
+		std::cin >> m;
 		vin.push_back(m);
+		n--;
+	}
 
 	for (int i = 0; i != (int)vin.size(); i++) {
 		int n1 = vin[i] - 1;
@@ -25,12 +27,6 @@ int main() {
 
 
 	std::cin >> m;
-
-
-
-
-
-
 
 
 }
